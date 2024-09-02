@@ -2,22 +2,21 @@ import Head from "next/head";
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
-  AiFillGithub,
+  AiFillYoutube,
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
-import Image from "next/image";
-import profilePic from "../public/profile-pic.png"; 
+import deved from "../public/dev-ed-wave.png";
 import code from "../public/code.png";
 import design from "../public/design.png";
-import research from "../public/research.png";
 import consulting from "../public/consulting.png";
-import web1 from "../public/project1.png"; 
-import web2 from "../public/project2.png";
-import web3 from "../public/project3.png";
-import web4 from "../public/project4.png";
-import web5 from "../public/project5.png";
-import web6 from "../public/project6.png";
+import Image from "next/image";
+import web1 from "../public/web1.png";
+import web2 from "../public/web2.png";
+import web3 from "../public/web3.png";
+import web4 from "../public/web4.png";
+import web5 from "../public/web5.png";
+import web6 from "../public/web6.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -25,11 +24,11 @@ export default function Home() {
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
-        <title>SriHarsha Bodicherla - Portfolio</title>
-        <meta name="description" content="Portfolio of SriHarsha Bodicherla" />
+        <title>My Portfolio</title>
+        <meta name="description" content="My personal portfolio website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
+      <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 className="font-burtons text-xl">SriHarsha Bodicherla</h1>
@@ -42,10 +41,8 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="/resume.pdf" // Ensure you have your resume uploaded to this path
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                  href="#"
                 >
                   Resume
                 </a>
@@ -57,95 +54,83 @@ export default function Home() {
               SriHarsha Bodicherla
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Deep Learning Researcher and Developer.
+              Deep Learning Researcher & Machine Learning Enthusiast
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Enthusiastic about Deep Learning, Satellite Imagery, AI, and
-              Spectroscopy Data. Working on cutting-edge projects involving
-              GANs, diffusion models, atmospheric correction, and more. Let's
-              connect and collaborate on innovative projects!
+              Passionate about advancing the field of AI and exploring new
+              technologies. Join me in my journey of innovation and discovery!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillTwitterCircle />
-              <AiFillLinkedin />
-              <AiFillGithub />
+              <a href="https://twitter.com/your-twitter" aria-label="Twitter">
+                <AiFillTwitterCircle />
+              </a>
+              <a href="https://linkedin.com/in/your-linkedin" aria-label="LinkedIn">
+                <AiFillLinkedin />
+              </a>
+              <a href="https://youtube.com/your-youtube" aria-label="YouTube">
+                <AiFillYoutube />
+              </a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={profilePic} layout="fill" objectFit="cover" />
+              <Image src={deved} layout="fill" objectFit="cover" alt="SriHarsha Bodicherla" />
             </div>
           </div>
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Services I Offer</h3>
+            <h3 className="text-3xl py-1 dark:text-white">Services I Offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I have a strong background in Deep Learning, AI, and Software
-              Development, working on a range of projects from atmospheric
-              correction to image inpainting. My expertise spans across various
-              domains, enabling me to offer a wide array of services.
+              With a solid background in deep learning and AI, I offer a range of
+              services including machine learning model development, data analysis,
+              and research consultation.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Whether it's developing advanced machine learning models, building
-              software applications, or conducting in-depth research, I am here
-              to help you achieve your goals.
+              I specialize in creating innovative solutions and advancing the field
+              of artificial intelligence through research and practical applications.
             </p>
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={design} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                AI and Deep Learning Solutions
-              </h3>
+              <Image src={design} width={100} height={100} alt="AI Design" />
+              <h3 className="text-lg font-medium pt-8 pb-2">AI Solutions</h3>
               <p className="py-2">
-                Designing and implementing AI-driven solutions tailored to your
-                specific needs, including image inpainting, atmospheric
-                correction, and more.
+                Providing cutting-edge AI solutions tailored to your needs and goals.
               </p>
-              <h4 className="py-4 text-teal-600">Technologies I Use</h4>
-              <p className="text-gray-800 py-1">Python</p>
+              <h4 className="py-4 text-teal-600">Tools and Technologies</h4>
               <p className="text-gray-800 py-1">TensorFlow</p>
               <p className="text-gray-800 py-1">PyTorch</p>
               <p className="text-gray-800 py-1">Keras</p>
+              <p className="text-gray-800 py-1">Scikit-Learn</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Software Development
-              </h3>
+              <Image src={code} width={100} height={100} alt="Machine Learning Code" />
+              <h3 className="text-lg font-medium pt-8 pb-2">Model Development</h3>
               <p className="py-2">
-                Building robust and scalable software solutions, including web
-                applications, automation tools, and more.
+                From concept to deployment, I build and optimize machine learning models.
               </p>
-              <h4 className="py-4 text-teal-600">Tools I Use</h4>
-              <p className="text-gray-800 py-1">React</p>
-              <p className="text-gray-800 py-1">Node.js</p>
-              <p className="text-gray-800 py-1">Tailwind CSS</p>
-              <p className="text-gray-800 py-1">GitHub</p>
+              <h4 className="py-4 text-teal-600">Programming Languages</h4>
+              <p className="text-gray-800 py-1">Python</p>
+              <p className="text-gray-800 py-1">R</p>
+              <p className="text-gray-800 py-1">Julia</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={research} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2">Research</h3>
+              <Image src={consulting} width={100} height={100} alt="Consulting" />
+              <h3 className="text-lg font-medium pt-8 pb-2">Consulting</h3>
               <p className="py-2">
-                Conducting research in deep learning, generative models,
-                atmospheric correction, and more, with a focus on publishing
-                findings and advancing the field.
+                Offering expert advice and strategies for your AI and machine learning projects.
               </p>
-              <h4 className="py-4 text-teal-600">Research Areas</h4>
-              <p className="text-gray-800 py-1">GANs</p>
-              <p className="text-gray-800 py-1">Diffusion Models</p>
-              <p className="text-gray-800 py-1">Remote Sensing</p>
-              <p className="text-gray-800 py-1">Spectroscopy Data</p>
+              <h4 className="py-4 text-teal-600">Consulting Areas</h4>
+              <p className="text-gray-800 py-1">Research Guidance</p>
+              <p className="text-gray-800 py-1">Project Management</p>
+              <p className="text-gray-800 py-1">Technical Review</p>
             </div>
           </div>
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portfolio</h3>
+            <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Here are some of the projects I've worked on, showcasing my
-              expertise in AI, software development, and research. Each project
-              highlights my ability to solve complex problems and deliver
-              innovative solutions.
+              Explore some of my notable projects and contributions to the field of AI.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
@@ -156,9 +141,8 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web1}
+                alt="Project 1"
               />
-              <h4 className="text-lg font-medium pt-8 pb-2">Project 1</h4>
-              <p className="text-gray-800 py-1">Description of Project 1.</p>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
@@ -167,9 +151,8 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web2}
+                alt="Project 2"
               />
-              <h4 className="text-lg font-medium pt-8 pb-2">Project 2</h4>
-              <p className="text-gray-800 py-1">Description of Project 2.</p>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
@@ -178,9 +161,8 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web3}
+                alt="Project 3"
               />
-              <h4 className="text-lg font-medium pt-8 pb-2">Project 3</h4>
-              <p className="text-gray-800 py-1">Description of Project 3.</p>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
@@ -189,9 +171,8 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web4}
+                alt="Project 4"
               />
-              <h4 className="text-lg font-medium pt-8 pb-2">Project 4</h4>
-              <p className="text-gray-800 py-1">Description of Project 4.</p>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
@@ -200,9 +181,8 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web5}
+                alt="Project 5"
               />
-              <h4 className="text-lg font-medium pt-8 pb-2">Project 5</h4>
-              <p className="text-gray-800 py-1">Description of Project 5.</p>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
@@ -211,9 +191,8 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={web6}
+                alt="Project 6"
               />
-              <h4 className="text-lg font-medium pt-8 pb-2">Project 6</h4>
-              <p className="text-gray-800 py-1">Description of Project 6.</p>
             </div>
           </div>
         </section>
